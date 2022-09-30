@@ -1,0 +1,759 @@
+@font-face {
+    font-family: one;
+    src: url(./fonts/KFOmCnqEu92Fr1Mu4mxK[1].ttf);
+}
+
+@font-face {
+    font-family: hoppy;
+    src: url(./fonts/Druk-Bold[1].ttf);
+}
+
+@font-face {
+    font-family: s1-btm;
+    src: url(./fonts/yank-webfont[1].ttf);
+}
+
+@font-face {
+    font-family: pro;
+    src: url(./fonts/one.ttf);
+}
+@font-face {
+    font-family: new;
+    src: url(./fonts/Druk-Bold[1].ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Raleway:wght@100&display=swap');
+
+/* -------------------------------< boiler plate & main >--------------------------------- */
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f5f1e7;
+    overflow-x: hidden;
+}
+
+/* -----------------------------------< #top-slide >-------------------------------------- */
+
+#top-slide{
+    min-height: inherit;
+    width: 100%;
+    /* background-color: #f5f1e7; */
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+#l-side{
+    min-height: inherit;
+    width: 19%;
+    /* background-color: #020101; */
+    /* border: 1px solid #020101; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#options{
+    margin-top: 12%;
+    margin-left: 5%;
+    height: 15vh;
+    width: 18%;
+    /* background-color: #b0012e; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.op{
+    height: 5vh;
+    width: 5vh;
+    color: #020101;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    font-weight: 100;
+}
+#vertical-line{
+    margin-top: 16%;
+    height: 85vh;
+    width: 0.25vh;
+    background-color: #020101;
+}
+#brand{
+    margin-top: 6%;
+    height: 7vh;
+    width: 65%;
+    /* background-color: #b0012e; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/lagunitas.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#r-side{
+    height: 10vh;
+    width: 19%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#buy-now{
+    height: 60%;
+    width: fit-content;
+    padding: 0% 5%;
+    background-color: #b0012e;
+    color: #fffcff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#buy-now h2{
+    font-family: one;
+    font-size: 1.6vw;
+    font-weight: 600;
+    letter-spacing: 0.15vh;
+}
+
+/* ------------------------------------< Bottle >------------------------------------------ */
+
+#bottle{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45.5%,-50.5%) rotate(25deg);
+    height: 93vh;
+    width: 80vh;
+    z-index: 2;
+    background-image: url(./images/ref-hero.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------< #s-1 >------------------------------------------- */
+
+#s-1{
+    height: 51vw;
+    width: 100vw;
+    background-color: #f5f1e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+#s1-txt-center{
+    height: 50%;
+    width: 55%;
+    /* background-color: #b0012e; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* z-index: ; */
+}
+#s1-txt-center h1{
+    text-transform: uppercase;
+    font-size: 29vh;
+    line-height: 0.8;
+    letter-spacing: 0.5vh;
+    font-family: hoppy;
+    color: #82af5d;
+}
+#s1-btm-txt{
+    height: 15%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: #ae1a1a; */
+    bottom: -50%;
+    left: -26%;
+    position: absolute;
+    z-index: 0;
+}
+#s1-btm-txt h1{
+    font-family: s1-btm;
+    font-weight: 100;
+    font-size: 3.5vh;
+    letter-spacing: 0.01vw;
+    color: #020101;
+    text-transform: unset;
+}
+
+/* -------------------------------------< #s-2 >------------------------------------------- */
+
+#s-2{
+    height: 35vw;
+    width: 100vw;
+    background-color: #f5f1e7;
+    display: flex;
+    padding: 0vh 8.5vh 0vh 12vh;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+#s2-l-box{
+    height: 46.5vh;
+    width: 40vw;
+    overflow: hidden;
+}
+#s2-title{
+    height: 16vh;
+    width: 38vw;
+    padding: 1vh 2.2vh;
+    display: flex;
+    align-items: center;
+}
+#s2-title h1{
+    font-family: hoppy;
+    font-size: 4vw;
+    text-transform: uppercase;
+    line-height: 0.9;
+}
+#s2-product{
+    height: 4vh;
+    width: 38vw;
+    font-family: hoppy;
+    padding: 1vh 2.2vh;
+}
+#s2-product h2{
+    font-family: hoppy;
+    font-size: 1.9vw;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#s2-product-discription{
+    height: 20vh;
+    width: 38vw;
+    line-height: 1.5;
+    padding: 1vh 2.2vh;
+}
+#s2-product-discription h1{
+    font-family: pro;
+    font-size: 2vh;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+#s2-buy-now{
+    height: 6.5vh;
+    width: 18vh;
+    background-color: #020101;
+    margin-left: 1vw;
+    color: #f5f1e7;
+    color: white;
+    border-radius: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#s2-buy-now h1{
+    font-family: one;
+    font-size: 3vh;
+}
+#s2-r-box{
+    height: 56vh;
+    width: 26vw;
+    border: 3px solid #020101;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5vw 2vw;
+}
+#s2-r-1{
+    height: 6.8vh;
+    width: 14vw;
+}
+.s2-r-1-dot{
+    text-transform: uppercase;
+    height: 50%;
+    width: 100%;
+}
+.s2-r-1-dot h1{
+    font-family: hoppy;
+    font-size: 2.5vh;
+}
+.s2-r-1-dot>p{
+    font-family: pro;
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+/* ----------------------- */
+.s2-r-2{
+    height: 16vh;
+    width: 20vw;
+}
+.s2-r-2-a{
+    height: 60%;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+}
+.s2-r-2-a-l{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.s2-r-2-a-l h1{
+    font-family: hoppy;
+    font-size: 3vw;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+.s2-r-2-a-r{
+    height: 100%;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+}
+.s2-r-2-a-r p{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6vh;
+    font-weight: 600;
+    width: 100%;
+    height: 70%;
+}
+/* ------------------------------ */
+.s2-r-2-b{
+    height: 18%;
+    width: 20vw;
+    
+}
+.s2-r-2-b h1{
+    font-family: hoppy;
+    font-size: 1.5vw;
+    font-weight: 100;
+    margin-top: -1%;
+}
+/* ------------------------------ */
+.s2-r-2-c{
+    height: 22%;
+    width: 20vw;
+}
+.s2-r-2-c h1{
+    font-family: hoppy;
+    font-size: 1.5vw;
+    font-weight: 100;
+    margin-top: -0.5%;
+    letter-spacing: 0.3vh;
+    text-transform: uppercase;
+}
+/* ------------------------------ */
+#s2-r-3{
+    height: 12vh;
+    width: 21vw;
+    display: flex;
+}
+.s2-r-3-l{
+    height: 100%;
+    width: 18%;
+    display: flex;
+    align-items: center;
+}
+.s2-r-3-l h1{
+    font-family: hoppy;
+    font-size: 3.3vw;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.s2-r-3-r{
+    height: 100%;
+    width: 82%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s2-r-3-r>h1{
+    font-family: hoppy;
+    font-size: 1.1vw;
+    font-weight: 100;
+    margin-top: -0.5%;
+    text-transform: uppercase;
+    letter-spacing: 0.3vh;
+    padding-left: 1vh;
+}
+/* ------------------------------- */
+.s2-r-line{
+    height: 0.2vh;
+    width: 18.7vw;
+    background-color: #020101;
+}
+
+/* -------------------------------------< #s-3 >------------------------------------------- */
+
+#s-3{
+    height: 120vh;
+    width: 100vw;
+    background-color: #f5f1e7;
+    position: relative;
+    z-index: 0;
+}
+#s-3-word{
+    height: 35vh;
+    width: 93vw;
+    background-color: #f5f1e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    left: 52%;
+    transform: translate(-50%,0%);
+}
+#s-3-word h1{
+    font-family: hoppy;
+    font-size: 25vw;
+    margin-top: 0.8vw;
+    text-transform: uppercase;
+    color: #82af5d;
+}
+#s3-v{
+    position: relative;
+    position: absolute;
+    height: 15.5vw;
+    width: 28vw;
+    background-color: #020101;
+    top: 40%;
+    left: 8%;
+}
+.s3-v-play{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+video{
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+.s3-v-thumbnail{
+    height: 100%;
+    width: 100%;
+    background-image: url(./images/video_thumbnail.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s3-v-play-btn{
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    background-color: rgb(220, 0, 0);
+    border: 0.3vw solid #f5f1e7;
+    box-shadow: 0vw 0vw 0.5vw #f5f1e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 9999;
+}
+.s3-v-play-btn i{
+    color: #f5f1e7;
+    font-size: 6vh;
+}
+#s3-v-auth{
+    position: absolute;
+    height: 5vw;
+    width: 28vw;
+    top: 68%;
+    left: 8%;
+    display: flex;
+    align-items: center;
+}
+#s3-v-auth h1{
+    font-family: s1-btm;
+    font-weight: 100;
+    font-size: 1.7vw;
+    letter-spacing: 0.5px;
+    line-height: 1.1;
+    padding-left: 2px;
+}
+#s3-para{
+    position: absolute;
+    height: 29vw;
+    width: 24vw;
+    top: 40%;
+    right: 14.5%;
+}
+.s3-para-sub{
+    height: 50%;
+    width: 100%;
+    padding: 0.1vw 0.2vw;
+}
+.s3-para-sub p{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.3vh;
+    font-weight: 700;
+    width: 100%;
+    height: 70%;
+    letter-spacing: 0.04vh;
+    line-height: 1.3;
+}
+.s3-para-sub-title{
+    height: 24%;
+    width: 30%;
+}
+.s3-para-sub-title h1{
+    font-family: hoppy;
+    font-size: 2vw;
+    font-weight: 100;
+    margin-top: -0.5%;
+    letter-spacing: 0.3vh;
+    text-transform: uppercase;
+}
+
+/* -------------------------------------< #s-4 >------------------------------------------- */
+
+#s-4{
+    height: 110vh;
+    width: 100vw;
+    background-color: #f5f1e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+}
+#s-4-center{
+    position: relative;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    height: 30vw;
+    width: 30vw;
+}
+.citrus{
+    height: 18vw;
+    width: 18vw;
+    background-image: url(./images/Hoppy-Refresher.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: visible;
+    position: absolute;
+    top: -40%;
+    left: -80%;
+}
+.s-4-top{
+    height: 20%;
+    width: 70%;
+    color: #020101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: pro;
+    letter-spacing: 0.1vw;
+}
+.s-4-line{
+    height: 0.2vw;
+    width: 80%;
+    background-color: #020101;
+}
+.s-4-para{
+    height: 40%;
+    width: 80%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.s-4-para p{
+    font-family: 'Raleway', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.6vh;
+    font-weight: 900;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    letter-spacing: 0.04vh;
+    line-height: 1.3;
+    color: #020101;
+}
+.tropical{
+    height: 23vw;
+    width: 23vw;
+    background-image: url(./images/Hoppy-Refresher.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: visible;
+    position: absolute;
+    top: 25%;
+    left: -40%;
+}
+.refreshing{
+    height: 33vw;
+    width: 33vw;
+    background-image: url(./images/splat-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: visible;
+    position: absolute;
+    top: -7%;
+    right: -105%;
+}
+.refreshing p{
+    width: 80%;
+}
+#availability{
+    height: 25%;
+    width: 100%;
+    position: absolute;
+    bottom: -65%;
+}
+.s-4-avail-title{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s-4-avail-title h1{
+    color: #020101;
+    font-family: s1-btm;
+    font-weight: 100;
+    font-size: 3vh;
+    letter-spacing: 0.2vw;
+    text-transform: capitalize;
+    filter: drop-shadow(0 0 0.1rem #020101);
+}
+.s-4-avail-text{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s-4-avail-text h1{
+    color: #020101;
+    font-family: pro;
+    font-weight: 600;
+    font-size: 10vh;
+    letter-spacing: 0.01vw;
+    text-transform: uppercase;
+}
+#jar{
+    height: 28vw;
+    width: 23vw;
+    background-image: url(./images/Hoppy-Refresher-Mason-Jar-671x1024.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -43%;
+    transform: rotate(-22deg);
+    left: -86%;
+}
+
+/* -------------------------------------< #s-5 >------------------------------------------- */
+
+#s-5{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+}
+#s-5-products{
+    height: 42vh;
+    width: 70vw;
+    display: flex;
+    margin-left: 4vw;
+}
+.s-5-product{
+    width: 20%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* -------------------------------------< #s-6 >------------------------------------------- */
+
+#s-6{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8.5vh;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+}
+.team{
+    height: 28vw;
+    width: 37vw;
+    background-image: url(./images/ipaday2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#s-6-l-box{
+    height: 53.5vh;
+    width: 40vw;
+    overflow: hidden;
+}
+#s-6-txt{
+    height: 15%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+#s-6-txt h1{
+    font-family: s1-btm;
+    font-weight: 100;
+    font-size: 3.5vh;
+    letter-spacing: 0.01vw;
+    padding: 0vh 2.5vh;
+    color: #020101;
+    text-transform: unset;
+}
+
+/* ------------------------------------< .E.N.D. >----------------------------------------- */
