@@ -16,7 +16,7 @@ tl
         trigger:"#bottle",
         scroller:"body",
         start:"93% -195%",
-        end:"93% -265%", 
+        end:"93% -260%", 
         scrub:5,
     },
     scale:0.37,
